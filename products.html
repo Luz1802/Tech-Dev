@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tech & Dev - Productos</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+	<body class="flex flex-col min-h-screen bg-gray-100">
+		<header class="mb-2">
+			<iframe
+			    class="w-full h-20 border-none"
+				src="components/navbar.html"
+				frameborder="0"
+				scrolling="no">
+			</iframe>
+		</header>
+		<main class="flex-1 flex flex-col px-4 py-2">
+			<section class="flex flex-col items-center justify-center bg-white rounded-lg shadow p-4 mb-4">
+				<h1 class="text-center text-3xl font-bold text-blue-700 py-2 md:text-4xl lg:text-5xl">
+					Nuestros Productos
+				</h1>
+				<ul class="flex justify-center gap-4 text-base text-gray-600 md:text-lg lg:text-xl ul-hover-parent">
+                 <li>
+				  <a href="#computers">Computadoras</a>
+				 </li>
+                 <li>
+				  <a href="#accessories">Accesorios</a>
+				 </li>
+                 <li>
+				  <a href="#peripherals">Periféricos</a>
+				 </li>
+				</ul>
+			</section>
+			<!-- Computadoras -->
+            <section id="computers" class="mb-16">
+             <h2 class="text-3x1 font-bold mb-8 border-b pb-2">Computadoras</h2>
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+			 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+             <!-- Tarjeta MacBook Pro M2 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden">
+			 <img src="images/products/computers/laptop1.jpg" alt="MacBook Pro M2 " class="w-full h-48 object-contain p-4">
+			 <div class="p-4 flex flex-col gap-2">
+			 <h2 class="text-xl font-semibold text-gray-800">MacBook Pro M2</h2>
+             <p class="text-gray-600 text-sm">Chip M2 con 8-core CPU, 10-core GPU,
+             16GB RAM, 512GB SSD</p>
+             <p class="text-lg font-bold text-gray-900">$1,499</p>
+             <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Agregar al carrito</button>
+            </div>
+            </div>
+			<!-- Tarjeta Intel XPS 15 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden">
+			 <img src="images/products/computers/laptop2.jpg" alt="MacBook Pro M2 " class="w-full h-48 object-contain p-4">
+			 <div class="p-4 flex flex-col gap-2">
+			 <h2 class="text-xl font-semibold text-gray-800">Dell XPS 15</h2>
+             <p class="text-gray-600 text-sm">Intel i7-11800H, 16Gb RAM, 1TB SSD, NVIDIA
+             RTX350 Ti</p>
+             <p class="text-lg font-bold text-gray-900">$1,799</p>
+             <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Agregar al carrito</button>
+            </div>
+            </div>
+            </div>
+			<!-- Accesorios -->
+			<section id="accessories">
+			 <h2 class="text-3x1 font-bold mb-8 border-b pb-2">Accesorios</h2> 
+			 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			 <!-- Sony WH-1000XM4 -->
+             <div class="bg-white rounded-lg shadow-md overflow-hidden">
+			 <img src="images/products/accessories/headphones1.jpg" alt="Sony WH-1000XM4" class="w-full h-48 object-contain p-4">
+			 <div class="p-4 flex flex-col gap-2">
+			 <h2 class="text-xl font-semibold text-gray-800">Sony WH-1000XM4</h2>
+             <p class="text-gray-600 text-sm">Auriculares inalámbricos con cancelación de ruido</p>
+             <p class="text-lg font-bold text-gray-900">$349</p>
+             <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Agregar al carrito</button>
+            </div>
+            </div>
+			</div>
+			<!--Periféricos -->
+			<section id="peripherals">
+			 <h2 class="text-3x1 font-bold mb-8 border-b pb-2">Periféricos</h2> 
+			 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			 <!-- Logitech MX Keys -->
+			 <div class="bg-white rounded-lg shadow-md overflow-hidden">
+			 <img src="images/products/peripherals/keyboard1.jpg" alt="Logitech MX Keys" class="w-full h-48 object-contain p-4">
+			 <div class="p-4 flex flex-col gap-2">
+			 <h2 class="text-xl font-semibold text-gray-800">Logitech MX Keys</h2>
+			 <p class="text-gray-600 text-sm">Teclado inalámbrico para Mac/Windows</p>
+			 <p class="text-lg font-bold text-gray-900">$99</p>
+			 <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Agregar al carrito</button>
+			</div>
+			</div>
+			</section>
+		</main>
+		<footer>
+			<iframe
+			    class="w-full min-h-[18rem] sm:min-h-[20rem] md:min-h-[14rem] lg:min-h-[15rem] border-none"
+				src="components/footer.html"
+				frameborder="0"
+				scrolling="no">
+			</iframe>
+		</footer>
+	</body>
+</html>
